@@ -1,4 +1,4 @@
-## Apache Camel Message Routing How-to Examples
+## Instant Apache Camel Message Routing How-to Examples
 
 Creating a Camel project
 Routing messages to different destinations
@@ -13,8 +13,4 @@ Multicasting messages
 Error handling and monitoring
 Testing messaging applications
 
-
 ## Run the examples with: mvn test
-
-
-
