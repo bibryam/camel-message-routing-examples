@@ -23,7 +23,7 @@
     <artifactId>camel-message-routing</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-    <name>Apache Camel Message Routing How-to Examples</name>
+    <name>Instant Apache Camel Message Routing How-to Examples</name>
 
     <properties>
         <camel-version>2.11.0</camel-version>
@@ -42,7 +42,7 @@
         <module>using-components</module>
         <module>connecting-routes</module>
         <module>removing-unwanted-messages</module>
-        <module>message-transformations</module>
+        <module>transforming-messages</module>
         <module>splitting-message</module>
         <module>aggregating-messages</module>
         <module>reorganizing-messages</module>

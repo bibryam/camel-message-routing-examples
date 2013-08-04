@@ -26,8 +26,8 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>message-transformations</artifactId>
-    <name>Message transformations</name>
+    <artifactId>transforming-messages</artifactId>
+    <name>Transforming messages</name>
 
     <dependencies>
         <dependency>

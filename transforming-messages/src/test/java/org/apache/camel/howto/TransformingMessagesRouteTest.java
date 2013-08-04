@@ -19,18 +19,18 @@ package org.apache.camel.howto;
 import org.apache.camel.EndpointInject;
 import org.apache.camel.Produce;
 import org.apache.camel.ProducerTemplate;
+import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
-import org.apache.camel.test.spring.CamelSpringTestSupport;
+import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
-import org.springframework.context.support.AbstractApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MessageTransformationRouteSpringTest extends CamelSpringTestSupport {
+public class TransformingMessagesRouteTest extends CamelTestSupport {
 
     @Override
-    protected AbstractApplicationContext createApplicationContext() {
-        return new ClassPathXmlApplicationContext("META-INF/spring/message-transformation-context.xml");
+    protected RouteBuilder createRouteBuilder() throws Exception {
+        return new TransformingMessagesRoute();
     }
+
     @EndpointInject(uri = "mock:result")
     private MockEndpoint mockResult;
 
@@ -54,8 +54,8 @@ public class MessageTransformationRouteSpringTest extends CamelSpringTestSupport
                     "\"c\":{" +
                         "\"ca\":\"3\"," +
                         "\"cb\":\"4\"}" +
-                    "}" +
-             "}";
+                "}" +
+            "}";
 
     @Test
     public void transformsXmlIntoJson() throws Exception {

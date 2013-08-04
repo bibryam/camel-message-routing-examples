@@ -19,11 +19,11 @@ package org.apache.camel.howto;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.XmlJsonDataFormat;
 
-public class MessageTransformationRoute extends RouteBuilder {
+public class TransformingMessagesRoute extends RouteBuilder {
 
     private final XmlJsonDataFormat xmlJsonFormat;
 
-    public MessageTransformationRoute() {
+    public TransformingMessagesRoute() {
         xmlJsonFormat = new XmlJsonDataFormat();
         xmlJsonFormat.setForceTopLevelObject(true);
         xmlJsonFormat.setTrimSpaces(true);
