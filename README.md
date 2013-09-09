@@ -1,4 +1,4 @@
-### Instant Apache Camel Message Routing How-to Examples
+### Instant Apache Camel Message Routing Examples
 
 Creating a Camel project  
 Routing messages to different destinations  
